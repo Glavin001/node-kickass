@@ -20,6 +20,8 @@ Also known as [method chaining](http://en.wikipedia.org/wiki/Method_chaining#jQu
 as used in [jQuery](http://jquery.com/).
 
 ```javascript
+var Kickass = require('node-kickass');
+
 var k = new Kickass()
 .setQuery('Almost Human')   // Set search Query parameter 
 .setPage(0)                 // Optional
@@ -48,16 +50,46 @@ var k = new Kickass()
 ## Functions
 
 - `constructor`
+```javascript
+var k = new Kickass()
+```
 
 - `setQuery`
+```javascript
+k.setQuery("Search Name")
+```
 
 - `setPage`
+```javascript
+k.setPage(0)
+```
 
 - `setSort`
+```javascript
+k.setSort({
+  field: "seeders",
+  sorder: "desc"
+});
+```
 
 - `run`
+```javascript
+k.run(function(errors, data) {
+            //console.log(data);
+            if (! errors.length > 0) {
+                done();
+                //console.log(data.length);
+            } else {
+                //console.log(errors);
+            }
+        });
+```
 
-- `wait`
+- `wait` (FIXME)
+Waits for all requests to be completed.
+```javascript
+k.wait()
+```
 
 -----
 
