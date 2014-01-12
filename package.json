@@ -2,7 +2,7 @@
   "name": "node-kickass",
   "version": "0.1.0",
   "description": "Query for torrents at Kickass.to with Node.js.",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "mocha test/test.js"
   },
