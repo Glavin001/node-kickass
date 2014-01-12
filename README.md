@@ -1,5 +1,7 @@
-node-kickass
+node-kickass [![NPM version](https://badge.fury.io/js/node-kickass.png)](http://badge.fury.io/js/node-kickass) [![Build Status](https://travis-ci.org/Glavin001/node-kickass.png?branch=master)](https://travis-ci.org/Glavin001/node-kickass)
 ============
+
+[![NPM](https://nodei.co/npm/node-kickass.png?downloads=true&stars=true)](https://nodei.co/npm/node-kickass/)
 
 > Query for torrents at Kickass.to with Node.js.
 
